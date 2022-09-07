@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="data:;base64,=" />
+    <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Page</h1>
+    </header>
+    <main>
+        <div class="validationPass">
+            <h2>All Validations were passed</h2>
+        </div>
+        <form id="formContainer">
+
+            <div>
+            <input type="text" id="name" placeholder="Name">
+            <div class="formError" id="name-error">Plese enter your full name</div>
+            </div>
+
+            <div>
+            <input type="text" id="subject" placeholder="Subject">
+            <div class="formError" id="subject-error">Plese enter your subject (minimum 10 charaters long)</div>
+            </div>
+
+            <div>
+            <input type="email" id="email" placeholder="Email">
+            <div class="formError" id="email-error">Plese enter a valid Email</div>
+            </div>
+
+            <div>
+            <input type="text" id="adress" placeholder="Adress">
+            <div class="formError" id="adress-error">Plese enter your full adress (minimum 25 characters long)</div>
+            </div>
+
+            <button>Submit</button>
+            
+        </form>
+    </main>
+    <script src="js\contact.js"></script>
+</body>
+</html>
