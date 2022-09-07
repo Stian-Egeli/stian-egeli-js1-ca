@@ -8,6 +8,14 @@ a{
     text-decoration: none;
 }
 
+#contactLink{
+    margin-left:50px;
+    font-size:x-large;
+    color: rgb(63, 63, 156);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+
 body{
     background-color:darkcyan;
     margin: 0;
@@ -52,6 +60,7 @@ form{
 .validationPass{
     display: none;
     margin-left: 10px;
+    color: green;
 }
 input{
     padding: 10px;
