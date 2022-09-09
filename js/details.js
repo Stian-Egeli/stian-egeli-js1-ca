@@ -20,6 +20,7 @@ const url = "https://free-to-play-games-database.p.rapidapi.com/api/games";
 const corsEnabledUrl = "https://noroffcors.herokuapp.com/" + url;
 
   async function getData(){
+    try{
     const result = await fetch(corsEnabledUrl, options);
     const response = await result.json();
     console.log(response);
@@ -34,7 +35,9 @@ const corsEnabledUrl = "https://noroffcors.herokuapp.com/" + url;
                                     <p>${detail.genre}</p>
                                 </div>`
     document.title = `${detail.title}`
-    
+    }catch(error){
+      console.log(error);
+    }
   }
 
   getData();
